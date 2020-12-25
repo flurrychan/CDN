@@ -154,8 +154,6 @@ img {
 }
 /*菜单居中*/
 #nav .menus_items {
-    text-align: center;
-    display: inline;
     position: absolute;
     width: 100%;
     text-align: center;
