@@ -1,0 +1,154 @@
+  body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+        default;
+}
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+        default;
+}
+
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
+}
+
+
+
+/* 头像撒花 */
+.card-info-avatar.is-center:hover {
+  background: url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/handsome/7.3.1/assets/img/snow.gif);
+  background-size: cover;
+}
+/*移动端优化：去除归档、标签、最新文章、公告、评论、只保留网站统计*/
+@media screen and (max-width: 900px) {
+  .card-info,
+  .card-announcement,
+  .card-recent-post,
+  #card-newest-comments,
+  .card-categories,
+  .card-tags,
+  .card-archives,
+  .item-headline {
+    display: none;
+  }
+}
+
+/*彩虹文字*/
+#nav #site-name,
+#page-header #site-title,
+#page-header #site-subtitle,
+#post-info .post-title {
+  padding-top: 3px;
+  background-image: linear-gradient(
+    to left,
+    orangered,
+    orange,
+    gold,
+    lightgreen,
+    cyan,
+    dodgerblue,
+    mediumpurple,
+    hotpink,
+    orangered
+  );
+  background-size: 110vw;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: rainbowan 60s linear infinite;
+  animation: rainbowan 60s linear infinite;
+}
+@-webkit-keyframes rainbowan {
+  to {
+    background-position: -2000vw;
+  }
+}
+@keyframes rainbowan {
+  to {
+    background-position: -2000vw;
+  }
+}
+
+/*标题颜色*/
+.fa-search:before {
+ color: LightGreen;
+}
+.fa-home:before {
+  color: Yellow;
+}
+.fa-archive:before {
+  color: LightBlue;
+}
+.fa-tags:before {
+  color: #05ebe1;
+}
+.fa-heartbeat:before {
+  color: #da16c3;
+}
+.fa-link:before {
+  color: #a9fe76;
+}
+.fa-heart:before {
+  color: #FF0000;
+}
+.fa-whatsapp-square:before {
+  color: #00ff0d;
+}
+.fa-envelope:before {
+  color: #8e9fff;
+}
+.fa-rss:before {
+  color: orange;
+}
+.fa-images:before {
+  color: rgb(4, 0, 255);
+}
+/*分类css*/
+.category-list-count:after {
+  content: " 篇";
+}
+.fa-book {
+  padding-right: 5px;
+}
+.category-list-count {
+  font-weight: bold;
+}
+.category-list-item {
+  list-style-type: none;
+}
+/*页脚颜色*/
+#footer:before {
+  background-color: rgba(255, 255, 255, 0)!important;
+}
