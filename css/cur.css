@@ -153,11 +153,11 @@ img {
   background-color: rgba(255, 255, 255, 0)!important;
 }
 /*菜单居中*/
-#nav .menus_items {
+/* #nav .menus_items {
     position: absolute;
     width: 100%;
     text-align: center;
     left: 0;
     right: 0;
     margin: auto;
-}
+} */
