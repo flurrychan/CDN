@@ -8,7 +8,7 @@
 }
 /* top-img隐藏 */
 #page-header {
-  background-image: url() !important;
+  background-image: url(https://cdn.jsdelivr.net/gh/flurrychan/CDN/image/15.jpg) !important;
 }
 /* 宽度小于530px隐藏信封 */
 @media screen and (max-width: 530px) {
